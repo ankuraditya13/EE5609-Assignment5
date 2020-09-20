@@ -161,6 +161,7 @@ ax^2 + 2bxy + cy^2 + 2dx +2ey +f = 0
 In vector from the equation \eqref{main_eq} canb be expressed as,
 \begin{align}
 \vec{x}^T\vec{V}\vec{x} + 2\vec{u}^T\vec{x} + f = 0 
+\label{line_vec}
 \end{align}
 where,
 \begin{align}
@@ -188,7 +189,51 @@ Now equation \eqref{Q_eq} represents pair of straight lines if,
 \end{align}
 \begin{align}
 \implies k =0 , k = 6 
+\label{k}
 \end{align}
-
+Substitutong \eqref{k} in \eqref{Q_eq} we get,
+\begin{align}
+6xy-8x+9y-12 = 0
+\end{align}
+\begin{align}
+-8x+9y-12 = 0
+\end{align}
+Hence value of k = 6 represents pair of straight lines.
+Also it can be verified that the pair of lines intersect as,
+\begin{align}
+\mydet{\vec{V}} = \mydet{0&3\\3&0} <0 
+\end{align} 
+Let the pair of straight lines is given by,
+\begin{align}
+\vec{n_1}^T\vec{x} = c1
+\label{e1}
+\end{align}
+\begin{align}
+\vec{n_2}^T\vec{x} = c2
+\label{e2}
+\end{align}
+Now equating the product of equation \eqref{e1} and \eqref{e2} with \eqref{line_vec} we get,
+\begin{align}
+(\vec{n_1}^T\vec{x} - c1)(\vec{n_2}^T\vec{x} - c2) = \vec{x}^T\myvec{0&3\\3&0}\vec{x} + 2\myvec{-4& \frac{9}{2}}\vec{x} - 12 
+\end{align}
+\begin{align}
+\implies n_1 * n_2 = \{0,6,0\}
+\end{align}
+\begin{align}
+c_1n_1+c_2n_2 = \myvec{8\\-9}
+\end{align}
+\begin{align}
+c_1c_2 = -12.
+\end{align}
+Now the slopes of line is given by roots of polynomial,
+\begin{align}
+cm^2 + 2bm + a = 0
+\end{align} 
+\begin{align}
+\implies 2bm = 0
+\end{align}
+\begin{align}
+\implies m = 0
+\end{align}
 
 \end{document}
